@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.block {
+  display: table-row;
+  height: 1px;
+}
+.push {
+  height: auto;
+}
+footer {
+  margin-top: 20px;
+  padding: 15px 0 15px;
+  border-width: 1px 0;
+  border-style: solid;
+}
