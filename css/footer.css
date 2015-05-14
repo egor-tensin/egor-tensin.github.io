@@ -2,16 +2,16 @@ html, body {
   height: 100%;
   width: 100%;
 }
-.wrapper {
+.top-level-footer-wrapper {
   height: 100%;
   width: 100%;
   display: table;
 }
-.block {
+.footer-wrapper-row {
   display: table-row;
   height: 1px;
 }
-.push {
+.footer-wrapper-row-auto-height {
   height: auto;
 }
 footer {
