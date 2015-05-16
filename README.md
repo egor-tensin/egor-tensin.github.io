@@ -31,6 +31,20 @@ One possible workaround is to add `--force_polling` to `jekyll`s options:
 It might still not work though, so you might end up having to re-run `jekyll` manually.
 For details, refer to http://jekyll-windows.juthilo.com/4-wdm-gem/.
 
+To use properly formatted external CSS stylesheets and Javascript files instead of the `min`ified versions, override the `site.minified_externals` field by passing `--config _config.yml,_config_dev.yml` to `jekyll`.
+
+To sum up, on Linux use
+
+    bundle exec jekyll serve \
+        --watch \
+        --config _config.yml,_config_dev.yml
+
+and on Windows (hoping for the best) use
+
+    bundle exec jekyll serve ^
+        --watch --force_polling ^
+        --config _config.yml,_config_dev.yml
+
 ## Licensing
 
 This project, including all of the files and their contents, is licensed under the terms of the MIT License.
