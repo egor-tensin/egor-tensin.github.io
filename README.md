@@ -18,7 +18,7 @@ in the project's root directory.
 
 To run a local web server, run
 
-    bundle exec jekyll serve --watch
+    bundle exec jekyll serve --watch --config _config.yml,_config_dev.yml
 
 from the project's root directory.
 You can then review your changes at http://localhost:4000/.
@@ -26,24 +26,15 @@ You can then review your changes at http://localhost:4000/.
 Please note that the support for `--watch`ing for modification on Windows is kind of iffy at the moment of writing.
 One possible workaround is to add `--force_polling` to `jekyll`s options:
 
-    bundle exec jekyll serve --watch --force_polling
+    bundle exec jekyll serve --watch --force_polling --config _config.yml,_config_dev.yml
 
 It might still not work though, so you might end up having to re-run `jekyll` manually.
 For details, refer to http://jekyll-windows.juthilo.com/4-wdm-gem/.
 
-To use properly formatted external CSS stylesheets and Javascript files instead of the `min`ified versions, override the `site.minified_externals` field by passing `--config _config.yml,_config_dev.yml` to `jekyll`.
+Note that `_config_dev.yml` is included to rewrite some of the `site` fields from `_config.yml` during development.
+In particular, it
 
-To sum up, on Linux use
-
-    bundle exec jekyll serve \
-        --watch \
-        --config _config.yml,_config_dev.yml
-
-and on Windows (hoping for the best) use
-
-    bundle exec jekyll serve ^
-        --watch --force_polling ^
-        --config _config.yml,_config_dev.yml
+* sets `minified_externals` to `false` so that the properly formatted versions of external CSS stylesheets and JavaScript files are included instead of the `min`ified versions.
 
 ## Licensing
 
