@@ -1,5 +1,5 @@
-bootstrap_version: 3.2.0
-jquery_version: 1.11.0
+bootstrap_version: 3.3.5
+jquery_version: 1.11.3
 html5shiv_version: 3.7.2
 respond_version: 1.4.2
 minified_externals: true
