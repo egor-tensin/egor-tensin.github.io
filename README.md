@@ -1,6 +1,9 @@
 # Egor Tensin
 
-This is my website hosted using [GitHub Pages] at https://egor-tensin.github.io/.
+This is my website hosted using [GitHub Pages] at
+https://egor-tensin.github.io/.
+
+[GitHub Pages]: https://pages.github.com
 
 ## Installation
 
@@ -18,6 +21,9 @@ be installed by executing
     bundle install
 
 in the project's root directory.
+
+[Jekyll]: https://jekyllrb.com/
+[Bundler]: http://bundler.io/
 
 ## Development
 
@@ -60,9 +66,4 @@ See [LICENSE.txt] for details.
 This website is build upon the Twitter Bootstrap framework, which is also MIT
 Licensed and copyright 2015 Twitter.
 
-
-
 [LICENSE.txt]: LICENSE.txt
-[GitHub Pages]: https://pages.github.com
-[Jekyll]: https://jekyllrb.com/
-[Bundler]: http://bundler.io/
