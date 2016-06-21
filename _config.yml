@@ -1,17 +1,23 @@
-bootstrap_version: 3.3.6
-jquery_version: 1.11.3
-html5shiv_version: 3.7.2
-respond_version: 1.4.2
-minified_externals: true
+gems:
+  - jekyll-github-metadata
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE.txt
   - serve.bat
   - README.md
-gems: ['jekyll-github-metadata']
+
+minified_externals: true
+
+bootstrap_version: 3.3.6
+jquery_version: 1.11.3
+html5shiv_version: 3.7.2
+respond_version: 1.4.2
+
 repository: egor-tensin/egor-tensin.github.io
 personal_info:
+  name: Egor Tensin
   email: Egor.Tensin@gmail.com
   cv_url: https://rawgit.com/egor-tensin/cv/master/pdf/Egor_Tensin_CV_en.pdf
   linkedin_url: https://ru.linkedin.com/pub/egor-tensin/62/90/28b
