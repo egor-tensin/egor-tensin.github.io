@@ -1,13 +1,12 @@
 Egor Tensin
 ===========
 
-This is my website hosted using [GitHub Pages] at
-https://egor-tensin.github.io/.
+This is my website hosted on [GitHub Pages] at https://egor-tensin.github.io/.
 
 [GitHub Pages]: https://pages.github.com
 
-Installation
-------------
+Prerequisites
+-------------
 
 [Jekyll] is used to build a set of static HTML pages from a collection of
 templates and resources.
@@ -27,8 +26,8 @@ in the project's root directory.
 [Jekyll]: https://jekyllrb.com/
 [Bundler]: http://bundler.io/
 
-Development
------------
+Usage
+-----
 
 To run a local web server, execute
 
@@ -52,8 +51,7 @@ In particular, it
 of external CSS stylesheets and JavaScript files are included instead of the
 `min`ified versions.
 
-Accessing via file://
----------------------
+### Accessing via file://
 
 Jekyll doesn't provide native support for generating a static website which can
 be browsed without running an instance of Jekyll's web server.
