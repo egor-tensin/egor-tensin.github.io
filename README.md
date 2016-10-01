@@ -62,8 +62,7 @@ One easy workaround is to `wget` the website and convert the links:
 License
 -------
 
-This project, including all of the files and their contents, is licensed under
-the terms of the MIT License.
+Distributed under the MIT License.
 See [LICENSE.txt] for details.
 
 This website is build upon the Twitter Bootstrap framework, which is also MIT
