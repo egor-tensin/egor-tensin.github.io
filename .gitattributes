@@ -1,6 +1,4 @@
 * text=auto
 
-gpg.txt text eol=crlf
-
 *.bat text eol=crlf
 *.sh text eol=lf
