@@ -11,9 +11,9 @@ exclude:
 
 minified_externals: true
 
-bootstrap_version: 3.3.6
-jquery_version: 1.11.3
-html5shiv_version: 3.7.2
+bootstrap_version: 3.3.7
+jquery_version: 1.12.4
+html5shiv_version: 3.7.3
 respond_version: 1.4.2
 
 repository: egor-tensin/egor-tensin.github.io
