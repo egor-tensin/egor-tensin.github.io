@@ -1,46 +1,40 @@
 ---
 title: Main page
-layout: main
+layout: plain
 ---
-<div class="row">
-  <div class="col-md-12">
+<h1>{{ site.personal_info.name }}</h1>
+<hr/>
 
-    <h1>{{ site.personal_info.name }}</h1>
-    <hr/>
+<p>Hello! I'm a software engineer, and I'll be publishing some of my notes on <a href="https://pages.github.com/">GitHub Pages</a>. Feel free to make contributions or contact me.</p>
 
-    <p>Hello! I'm a software engineer, and I'll be publishing some of my notes on <a href="https://pages.github.com/">GitHub Pages</a>. Feel free to make contributions or contact me.</p>
+<div class="list-group wide-enough">
 
-    <div class="list-group wide-enough">
+  <a class="list-group-item" href="{{ site.github.owner_url }}"><span class="glyphicon glyphicon-home"></span>&nbsp;GitHub profile</a>
 
-      <a class="list-group-item" href="{{ site.github.owner_url }}"><span class="glyphicon glyphicon-home"></span>&nbsp;GitHub profile</a>
+  {% if site.personal_info.email %}
+    <a class="list-group-item" href="mailto:{{ site.personal_info.email }}"><span class="glyphicon glyphicon-envelope"></span>&nbsp;{{ site.personal_info.email }}</a>
+  {% endif %}
 
-      {% if site.personal_info.email %}
-        <a class="list-group-item" href="mailto:{{ site.personal_info.email }}"><span class="glyphicon glyphicon-envelope"></span>&nbsp;{{ site.personal_info.email }}</a>
-      {% endif %}
+  {% if site.personal_info.cv_url %}
+    <a class="list-group-item" href="{{ site.personal_info.cv_url }}"><span class="glyphicon glyphicon-file"></span>&nbsp;Curriculum vitae</a>
+  {% endif %}
 
-      {% if site.personal_info.cv_url %}
-        <a class="list-group-item" href="{{ site.personal_info.cv_url }}"><span class="glyphicon glyphicon-file"></span>&nbsp;Curriculum vitae</a>
-      {% endif %}
+  {% if site.personal_info.linkedin_url %}
+    <a class="list-group-item" href="{{ site.personal_info.linkedin_url }}"><span class="glyphicon glyphicon-zoom-in"></span>&nbsp;LinkedIn profile</a>
+  {% endif %}
 
-      {% if site.personal_info.linkedin_url %}
-        <a class="list-group-item" href="{{ site.personal_info.linkedin_url }}"><span class="glyphicon glyphicon-zoom-in"></span>&nbsp;LinkedIn profile</a>
-      {% endif %}
-
-    </div>
-
-    {% if site.personal_info.gpg %}
-      <p>My personal GnuPG public key can be found <a href="{{ site.personal_info.gpg.public_key_url }}">here</a>.
-Its fingerprint is <code style="white-space: pre-wrap;">{{ site.personal_info.gpg.fingerprint }}</code>.</p>
-    {% endif %}
-
-    {% if site.personal_info.projects %}
-      <h3>Projects</h3>
-      <div class="list-group wide-enough">
-        {% for project in site.personal_info.projects %}
-          <a class="list-group-item" href="{{ project.url }}"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp;{{ project.name }}</a>
-        {% endfor %}
-      </div>
-    {% endif %}
-
-  </div>
 </div>
+
+{% if site.personal_info.gpg %}
+  <p>My personal GnuPG public key can be found <a href="{{ site.personal_info.gpg.public_key_url }}">here</a>.
+Its fingerprint is <code style="white-space: pre-wrap;">{{ site.personal_info.gpg.fingerprint }}</code>.</p>
+{% endif %}
+
+{% if site.personal_info.projects %}
+  <h3>Projects</h3>
+  <div class="list-group wide-enough">
+    {% for project in site.personal_info.projects %}
+      <a class="list-group-item" href="{{ project.url }}"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp;{{ project.name }}</a>
+    {% endfor %}
+  </div>
+{% endif %}
