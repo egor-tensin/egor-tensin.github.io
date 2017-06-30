@@ -1,6 +1,20 @@
+/* Utility classes to prevent blocks from expanding unreasonably. */
 .wide-enough {
   max-width: 400px;
 }
 .wider {
   max-width: 600px;
+}
+/* Lighter background for <pre> and <code> elements. */
+pre {
+  font-size: inherit;
+  background-color: #fbfbfb;
+}
+.highlight {
+  background-color: #fbfbfb !important;
+}
+code {
+  color: inherit;
+  background-color: #fbfbfb;
+  font-size: inherit;
 }
