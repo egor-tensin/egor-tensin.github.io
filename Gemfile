@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
-gem 'github-pages', '147'
-# For some reason, "I get LoadError: cannot load such file -- json" otherwise.
+gem 'github-pages', '152'
+# For some reason, I get `LoadError` if I omit the gems below.
 gem 'json'
+gem 'bigdecimal'
