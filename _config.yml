@@ -27,7 +27,7 @@ personal_info:
     public_key_url: /gpg.txt
     fingerprint: 0281 0B23 3E1A 7D41 8FB1  5245 0494 6FC7 502B 539A
   projects:
+    - url: /blog/
+      name: My blog
     - url: /sorting-algorithms/
       name: Sorting algorithms
-    - url: /cpp-notes/
-      name: C++ notes
