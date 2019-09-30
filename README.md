@@ -10,12 +10,7 @@ Prerequisites
 
 [Jekyll] is used to build a set of static HTML pages from a collection of
 templates and resources.
-It might seem like Jekyll doesn't support Windows very well.
-However, at the moment of writing one can get it to work using the excellent
-tutorial at http://jekyll-windows.juthilo.com/.
-I personally had no problems running Jekyll on Windows whatsoever.
-
-I use [Bundler] to manage project's dependencies.
+[Bundler] is used to manage project's dependencies.
 Make sure you have the `bundler` gem installed; project dependencies can then
 be installed by executing
 
