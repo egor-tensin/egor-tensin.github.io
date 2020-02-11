@@ -2,6 +2,7 @@ plugins:
   - jekyll-github-metadata
 
 exclude:
+  - .travis.yml
   - build.sh
   - Gemfile
   - Gemfile.lock
