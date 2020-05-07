@@ -1,3 +1,4 @@
+# Jekyll
 plugins:
   - jekyll-github-metadata
 
@@ -8,14 +9,16 @@ exclude:
   - LICENSE.txt
   - README.md
 
-minified_externals: true
+# jekyll-github-metadata
+repository: egor-tensin/egor-tensin.github.io
 
 bootstrap_version: 3.3.7
 jquery_version: 1.12.4
 html5shiv_version: 3.7.3
 respond_version: 1.4.2
 
-repository: egor-tensin/egor-tensin.github.io
+minified_externals: true
+
 personal_info:
   name: Egor Tensin
   email: Egor.Tensin@gmail.com
