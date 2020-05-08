@@ -1,6 +1,7 @@
 # Jekyll
 plugins:
   - jekyll-github-metadata
+  - jekyll-remote-theme
 
 exclude:
   - .travis.yml
@@ -11,13 +12,17 @@ exclude:
 
 # jekyll-github-metadata
 repository: egor-tensin/egor-tensin.github.io
+# jekyll-remote-theme
+remote_theme: egor-tensin/jekyll-theme
 
+# egor-tensin/jekyll-theme
 bootstrap_version: 3.3.7
 jquery_version: 1.12.4
 html5shiv_version: 3.7.3
 respond_version: 1.4.2
 
 minified_externals: true
+hide_navbar: true
 
 personal_info:
   name: Egor Tensin
