@@ -1,6 +1,8 @@
 Egor Tensin
 ===========
 
+[![Test](https://github.com/egor-tensin/egor-tensin.github.io/workflows/Test/badge.svg)](https://github.com/egor-tensin/egor-tensin.github.io/actions?query=workflow%3ATest)
+
 This is my website hosted on [GitHub Pages] at https://egor-tensin.github.io/.
 
 [GitHub Pages]: https://pages.github.com
