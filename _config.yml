@@ -27,7 +27,7 @@ hide_navbar: true
 personal_info:
   name: Egor Tensin
   email: Egor.Tensin@gmail.com
-  cv_url: https://rawgit.com/egor-tensin/cv/master/pdf/Egor_Tensin_CV_en.pdf
+  cv_url: https://egor-tensin.github.io/cv/cv.pdf
   gpg:
     public_key_url: /gpg.txt
     fingerprint: 0281 0B23 3E1A 7D41 8FB1  5245 0494 6FC7 502B 539A
