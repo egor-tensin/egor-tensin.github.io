@@ -31,15 +31,15 @@ personal_info:
     - url: mailto:Egor.Tensin@gmail.com
       text: Egor.Tensin@gmail.com
       glyph: envelope
-    - url: https://egor-tensin.github.io/cv/cv.pdf
+    - url: /gpg.txt
+      text: GnuPG key
+      glyph: lock
+    - url: /cv/cv.pdf
       text: CV
       glyph: file
     - url: https://egort.name/
       text: egort.name
       glyph: globe
-  gpg:
-    public_key_url: /gpg.txt
-    fingerprint: 0281 0B23 3E1A 7D41 8FB1  5245 0494 6FC7 502B 539A
   projects:
     - url: /blog/
       name: Blog
