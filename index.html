@@ -11,13 +11,11 @@ Feel free to make contributions or contact me.</p>
 
 <div class="list-group wide-enough">
   <a class="list-group-item" href="{{ site.github.owner_url }}"><span class="glyphicon glyphicon-home"></span>&nbsp;GitHub profile</a>
-  {% if site.personal_info.email %}
-    <a class="list-group-item" href="mailto:{{ site.personal_info.email }}"><span class="glyphicon glyphicon-envelope"></span>&nbsp;{{ site.personal_info.email }}</a>
+  {% if site.personal_info.links %}
+    {% for link in site.personal_info.links %}
+      <a class="list-group-item" href="{{ link.url }}"><span class="glyphicon glyphicon-{{ link.glyph }}"></span>&nbsp;{{ link.text }}</a>
+    {% endfor %}
   {% endif %}
-  {% if site.personal_info.cv_url %}
-    <a class="list-group-item" href="{{ site.personal_info.cv_url }}"><span class="glyphicon glyphicon-file"></span>&nbsp;Curriculum vitae</a>
-  {% endif %}
-  <a class="list-group-item" href="https://egort.name/"><span class="glyphicon glyphicon-tent"></span>&nbsp;Pictures of my dog</a>
 </div>
 
 {% if site.personal_info.gpg %}

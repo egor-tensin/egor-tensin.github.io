@@ -27,7 +27,16 @@ hide_navbar: true
 personal_info:
   name: Egor Tensin
   email: Egor.Tensin@gmail.com
-  cv_url: https://egor-tensin.github.io/cv/cv.pdf
+  links:
+    - url: mailto:Egor.Tensin@gmail.com
+      text: Egor.Tensin@gmail.com
+      glyph: envelope
+    - url: https://egor-tensin.github.io/cv/cv.pdf
+      text: Curriculum vitae
+      glyph: file
+    - url: https://egort.name/
+      text: Cute dog pictures
+      glyph: heart
   gpg:
     public_key_url: /gpg.txt
     fingerprint: 0281 0B23 3E1A 7D41 8FB1  5245 0494 6FC7 502B 539A
