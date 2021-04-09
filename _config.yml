@@ -8,6 +8,7 @@ exclude:
   - Gemfile.lock
   - LICENSE.txt
   - README.md
+  - vendor/
 
 # jekyll-github-metadata
 repository: egor-tensin/egor-tensin.github.io
