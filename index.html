@@ -1,8 +1,23 @@
 ---
 title: Main page
 layout: plain
+links:
+  - url: /gpg.txt
+    text: GnuPG key
+    glyph: lock
+  - url: /cv/cv.pdf
+    text: CV
+    glyph: file
+  - url: https://egort.name/
+    text: egort.name
+    glyph: globe
+projects:
+  - url: /blog/
+    name: Blog
+  - url: /sorting-algorithms/
+    name: Sorting algorithms
 ---
-<h1>{{ site.personal_info.name }}</h1>
+<h1>{{ site.settings.author.name }}</h1>
 <hr/>
 
 <p>Hello!
@@ -11,17 +26,18 @@ Feel free to make contributions or contact me.</p>
 
 <div class="list-group wide-enough">
   <a class="list-group-item" href="{{ site.github.owner_url }}"><span class="glyphicon glyphicon-home"></span>&nbsp;GitHub</a>
-  {% if site.personal_info.links %}
-    {% for link in site.personal_info.links %}
+  <a class="list-group-item" href="mailto:{{ site.settings.author.email }}"><span class="glyphicon glyphicon-envelope"></span>&nbsp;{{ site.settings.author.email }}</a>
+  {% if page.links %}
+    {% for link in page.links %}
       <a class="list-group-item" href="{{ link.url }}"><span class="glyphicon glyphicon-{{ link.glyph }}"></span>&nbsp;{{ link.text }}</a>
     {% endfor %}
   {% endif %}
 </div>
 
-{% if site.personal_info.projects %}
+{% if page.projects %}
   <h3>Projects</h3>
   <div class="list-group wide-enough">
-    {% for project in site.personal_info.projects %}
+    {% for project in page.projects %}
       <a class="list-group-item" href="{{ project.url }}"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp;{{ project.name }}</a>
     {% endfor %}
   </div>

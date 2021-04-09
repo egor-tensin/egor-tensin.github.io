@@ -1,47 +1,36 @@
 # Jekyll
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+
+# Plugins
 plugins:
   - jekyll-github-metadata
   - jekyll-remote-theme
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.txt
-  - README.md
-  - vendor/
-
 # jekyll-github-metadata
 repository: egor-tensin/egor-tensin.github.io
 # jekyll-remote-theme
-remote_theme: egor-tensin/jekyll-theme@9c44060f0d9dd530a4d90c635da7b83935a1ec19
+remote_theme: egor-tensin/jekyll-theme@f5dec4b9690193aa0eba8c9705ae01a0238ecf56
 
-# egor-tensin/jekyll-theme
-bootstrap_version: 3.3.7
-jquery_version: 1.12.4
-html5shiv_version: 3.7.3
-respond_version: 1.4.2
-
-minified_externals: true
-hide_navbar: true
+# Theme settings
+settings:
+  project:
+    license: MIT License
+    license_file: LICENSE.txt
+  author:
+    name: Egor Tensin
+    email: Egor.Tensin@gmail.com
+  navbar:
+    hide: true
+  3rdparty:
+    versions:
+      bootstrap: 3.3.7
+      jquery: 1.12.4
+      html5shiv: 3.7.3
+      respond: 1.4.2
+    minified: true
 
 personal_info:
-  name: Egor Tensin
-  email: Egor.Tensin@gmail.com
-  links:
-    - url: mailto:Egor.Tensin@gmail.com
-      text: Egor.Tensin@gmail.com
-      glyph: envelope
-    - url: /gpg.txt
-      text: GnuPG key
-      glyph: lock
-    - url: /cv/cv.pdf
-      text: CV
-      glyph: file
-    - url: https://egort.name/
-      text: egort.name
-      glyph: globe
-  projects:
-    - url: /blog/
-      name: Blog
-    - url: /sorting-algorithms/
-      name: Sorting algorithms

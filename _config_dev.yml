@@ -1,1 +1,3 @@
-minified_externals: false
+settings:
+  3rdparty:
+    minified: false
