@@ -1,7 +1,7 @@
 Egor Tensin
 ===========
 
-[![Test](https://github.com/egor-tensin/egor-tensin.github.io/workflows/Test/badge.svg)](https://github.com/egor-tensin/egor-tensin.github.io/actions?query=workflow%3ATest)
+[![Test](https://github.com/egor-tensin/egor-tensin.github.io/actions/workflows/test.yml/badge.svg)](https://github.com/egor-tensin/egor-tensin.github.io/actions/workflows/test.yml)
 
 This is my website hosted on [GitHub Pages] at https://egor-tensin.github.io/.
 
