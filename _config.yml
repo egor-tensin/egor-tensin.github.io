@@ -13,7 +13,7 @@ plugins:
 # jekyll-github-metadata
 repository: egor-tensin/egor-tensin.github.io
 # jekyll-remote-theme
-remote_theme: egor-tensin/jekyll-theme@6bf7c39c874004dd87d4c661018acf2285c8e135
+remote_theme: egor-tensin/jekyll-theme@69f431bc618bb319443e257de87cf3d660420e71
 
 # Theme settings
 settings:
@@ -25,10 +25,3 @@ settings:
     email: Egor.Tensin@gmail.com
   navbar:
     hide: true
-  3rdparty:
-    versions:
-      bootstrap: 3.4.1
-      jquery: 1.12.4
-      html5shiv: 3.7.3
-      respond: 1.4.2
-    minified: true
