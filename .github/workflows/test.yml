@@ -4,8 +4,8 @@ on:
   push:
   pull_request:
   schedule:
-    # Weekly, at 4:30 AM on Thursday (somewhat randomly chosen).
-    - cron: '30 4 * * 4'
+    # Weekly, at 5:45 AM on Thursday (somewhat randomly chosen).
+    - cron: '45 5 * * 4'
   workflow_dispatch:
 
 jobs:
