@@ -22,7 +22,7 @@ in the project's root directory.
 
 To run a local web server, run
 
-    bundle exec jekyll serve --watch --config _config.yml,_config_dev.yml
+    bundle exec jekyll serve
 
 You can then review your changes at http://localhost:4000/.
 
