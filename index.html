@@ -5,12 +5,12 @@ links:
   - url: /blog/
     text: Blog
     glyph: folder-open
-  - url: https://egort.name/
-    text: egort.name
-    glyph: globe
   - url: /cv/cv.pdf
     text: CV
     glyph: file
+  - url: https://egort.name/
+    text: egort.name
+    glyph: globe
 projects:
   - url: /jekyll-theme/
     name: Jekyll theme
@@ -25,13 +25,13 @@ projects:
 <p>Hello! I'm a software engineer, and here's some of my stuff.</p>
 
 <div class="list-group wide-enough">
-  <a class="list-group-item" href="{{ site.github.owner_url }}"><span class="glyphicon glyphicon-home"></span>&nbsp;GitHub</a>
-  <a class="list-group-item" href="mailto:{{ site.settings.author.email }}"><span class="glyphicon glyphicon-envelope"></span>&nbsp;{{ site.settings.author.email }}</a>
   {% if page.links %}
     {% for link in page.links %}
       <a class="list-group-item" href="{{ link.url }}"><span class="glyphicon glyphicon-{{ link.glyph }}"></span>&nbsp;{{ link.text }}</a>
     {% endfor %}
   {% endif %}
+  <a class="list-group-item" href="{{ site.github.owner_url }}"><span class="glyphicon glyphicon-home"></span>&nbsp;GitHub</a>
+  <a class="list-group-item" href="mailto:{{ site.settings.author.email }}"><span class="glyphicon glyphicon-envelope"></span>&nbsp;{{ site.settings.author.email }}</a>
 </div>
 
 {% if page.projects %}
