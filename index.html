@@ -1,9 +1,7 @@
 ---
 title: Main page
 layout: plain
-custom_css:
-  - index.css
-links:
+main:
   - url: /blog/
     text: Blog
     glyph: folder-open
@@ -20,6 +18,8 @@ projects:
     name: Sorting algorithms
   - url: /wireguard-config/
     name: WireGuard configuration
+links:
+  - {rel: stylesheet, href: assets/css/index.css}
 ---
 <h1>{{ site.settings.author.name }}</h1>
 <hr/>
@@ -27,8 +27,8 @@ projects:
 <p>Hello! I'm a software engineer, and here's some of my stuff.</p>
 
 <div class="list-group wide-enough">
-  {% if page.links %}
-    {% for link in page.links %}
+  {% if page.main %}
+    {% for link in page.main %}
       <a class="list-group-item" href="{{ link.url }}"><span class="glyphicon glyphicon-{{ link.glyph }}"></span>&nbsp;{{ link.text }}</a>
     {% endfor %}
   {% endif %}
