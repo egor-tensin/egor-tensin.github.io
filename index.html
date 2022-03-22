@@ -45,6 +45,12 @@ projects:
     <a class="list-group-item disabled" href="#">
       <h4 class="list-group-item-heading">links</h4>
     </a>
+    <a class="list-group-item" href="mailto:{{ site.settings.author.email }}">
+      <h4 class="list-group-item-heading">{{ site.settings.author.email | downcase }}</h4>
+    </a>
+    <a class="list-group-item" href="{{ site.github.owner_url }}">
+      <h4 class="list-group-item-heading">github</h4>
+    </a>
     {% if page.main %}
       {% for link in page.main %}
         <a class="list-group-item" href="{{ link.url }}">
@@ -52,12 +58,6 @@ projects:
         </a>
       {% endfor %}
     {% endif %}
-    <a class="list-group-item" href="mailto:{{ site.settings.author.email }}">
-      <h4 class="list-group-item-heading">{{ site.settings.author.email | downcase }}</h4>
-    </a>
-    <a class="list-group-item" href="{{ site.github.owner_url }}">
-      <h4 class="list-group-item-heading">github</h4>
-    </a>
   </div>
 
 </div>
