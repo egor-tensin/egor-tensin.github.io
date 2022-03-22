@@ -14,7 +14,7 @@ plugins:
 # jekyll-github-metadata
 repository: egor-tensin/egor-tensin.github.io
 # jekyll-remote-theme
-remote_theme: egor-tensin/jekyll-theme@494279e2336fda646656d2ca9c0585197e77c4f1
+remote_theme: egor-tensin/jekyll-theme@2ae68275cfa9817b98c4725be07c3b26ba0b04d2
 
 # Theme settings
 settings:
