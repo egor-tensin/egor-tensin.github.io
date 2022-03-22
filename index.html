@@ -2,45 +2,62 @@
 title: Main page
 layout: plain
 main:
-  - url: /blog/
-    text: Blog
-    glyph: folder-open
   - url: /cv/cv.pdf
-    text: CV
-    glyph: file
+    text: cv
   - url: https://egort.name/
     text: egort.name
-    glyph: globe
 projects:
+  - url: /blog/
+    name: blog
+    description: Random posts and notes
   - url: /jekyll-theme/
-    name: Jekyll theme
+    name: jekyll-theme
+    description: My Jekyll theme
   - url: /sorting-algorithms/
-    name: Sorting algorithms
+    name: sorting-algorithms
+    description: Getting the hang out of (sorting) algorithms
   - url: /wireguard-config/
-    name: WireGuard configuration
-links:
-  - {rel: stylesheet, href: assets/css/index.css}
+    name: wireguard-config
+    description: Generate WireGuard configuration files
 ---
 <h1>{{ site.settings.author.name }}</h1>
 <hr/>
 
-<p>Hello! I'm a software engineer, and here's some of my stuff.</p>
-
-<div class="list-group wide-enough">
-  {% if page.main %}
-    {% for link in page.main %}
-      <a class="list-group-item" href="{{ link.url }}"><span class="glyphicon glyphicon-{{ link.glyph }}"></span>&nbsp;{{ link.text }}</a>
-    {% endfor %}
-  {% endif %}
-  <a class="list-group-item" href="{{ site.github.owner_url }}"><span class="glyphicon glyphicon-home"></span>&nbsp;GitHub</a>
-  <a class="list-group-item" href="mailto:{{ site.settings.author.email }}"><span class="glyphicon glyphicon-envelope"></span>&nbsp;{{ site.settings.author.email }}</a>
-</div>
+<div style="display: flex; flex-wrap: wrap; column-gap: 1em;">
 
 {% if page.projects %}
-  <h3>Projects</h3>
   <div class="list-group wide-enough">
+    <a class="list-group-item disabled" href="#">
+      <h4 class="list-group-item-heading">projects</h4>
+    </a>
     {% for project in page.projects %}
-      <a class="list-group-item" href="{{ project.url }}"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp;{{ project.name }}</a>
+      <a class="list-group-item" href="{{ project.url }}">
+        <h4 class="list-group-item-heading">{{ project.name }}</h4>
+      {% if project.description %}
+        <p class="list-group-item-text">{{ project.description }}</p>
+      {% endif %}
+      </a>
     {% endfor %}
   </div>
 {% endif %}
+
+  <div class="list-group wide-enough">
+    <a class="list-group-item disabled" href="#">
+      <h4 class="list-group-item-heading">links</h4>
+    </a>
+    {% if page.main %}
+      {% for link in page.main %}
+        <a class="list-group-item" href="{{ link.url }}">
+          <h4 class="list-group-item-heading">{{ link.text }}</h4>
+        </a>
+      {% endfor %}
+    {% endif %}
+    <a class="list-group-item" href="mailto:{{ site.settings.author.email }}">
+      <h4 class="list-group-item-heading">{{ site.settings.author.email | downcase }}</h4>
+    </a>
+    <a class="list-group-item" href="{{ site.github.owner_url }}">
+      <h4 class="list-group-item-heading">github</h4>
+    </a>
+  </div>
+
+</div>
