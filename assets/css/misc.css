@@ -1,0 +1,4 @@
+.list-group-item {
+  /* Make the main list stand out, don't blur it out. */
+  color: #333 !important;
+}
