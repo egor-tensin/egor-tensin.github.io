@@ -27,9 +27,9 @@ projects:
 
 {% if page.projects %}
   <div class="list-group wide-enough">
-    <a class="list-group-item disabled" href="#">
+    <div class="list-group-item disabled">
       <h4 class="list-group-item-heading">projects</h4>
-    </a>
+    </div>
     {% for project in page.projects %}
       <a class="list-group-item" href="{{ project.url }}">
         <h4 class="list-group-item-heading">{{ project.name }}</h4>
@@ -42,9 +42,9 @@ projects:
 {% endif %}
 
   <div class="list-group wide-enough">
-    <a class="list-group-item disabled" href="#">
+    <div class="list-group-item disabled">
       <h4 class="list-group-item-heading">links</h4>
-    </a>
+    </div>
     <a class="list-group-item" href="mailto:{{ site.settings.author.email }}">
       <h4 class="list-group-item-heading">{{ site.settings.author.email | downcase }}</h4>
     </a>
