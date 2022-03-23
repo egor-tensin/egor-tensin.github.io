@@ -23,10 +23,12 @@ projects:
 <h1>{{ site.settings.author.name }}</h1>
 <hr/>
 
-<div style="display: flex; flex-wrap: wrap; column-gap: 1em;">
+<div class="row">
 
 {% if page.projects %}
-  <div class="list-group wide-enough">
+  <div class="col-sm-6 col-md-5 col-lg-4">
+
+  <div class="list-group">
     <div class="list-group-item disabled">
       <h4 class="list-group-item-heading">projects</h4>
     </div>
@@ -39,9 +41,13 @@ projects:
       </a>
     {% endfor %}
   </div>
+
+  </div>
 {% endif %}
 
-  <div class="list-group wide-enough">
+  <div class="col-sm-5 col-md-4 col-lg-3">
+
+  <div class="list-group">
     <div class="list-group-item disabled">
       <h4 class="list-group-item-heading">links</h4>
     </div>
@@ -60,4 +66,5 @@ projects:
     {% endif %}
   </div>
 
+  </div>
 </div>
