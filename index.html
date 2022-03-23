@@ -6,13 +6,14 @@ main:
     text: cv
   - url: https://egort.name/
     text: egort.name
+    description: My other place on the web
 projects:
   - url: /blog/
     name: blog
-    description: Random posts and notes
+    description: Random notes
   - url: /jekyll-theme/
     name: jekyll-theme
-    description: My Jekyll theme
+    description: This Jekyll theme
   - url: /sorting-algorithms/
     name: sorting-algorithms
     description: Getting the hang out of (sorting) algorithms
@@ -61,6 +62,9 @@ projects:
       {% for link in page.main %}
         <a class="list-group-item" href="{{ link.url }}">
           <h4 class="list-group-item-heading">{{ link.text }}</h4>
+        {% if link.description %}
+          <p class="list-group-item-text">{{ link.description }}</p>
+        {% endif %}
         </a>
       {% endfor %}
     {% endif %}
