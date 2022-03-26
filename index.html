@@ -35,7 +35,9 @@ projects:
     </div>
     {% for project in page.projects %}
       <a class="list-group-item" href="{{ project.url }}">
+      {% if project.name %}
         <h4 class="list-group-item-heading">{{ project.name }}</h4>
+      {% endif %}
       {% if project.description %}
         <p class="list-group-item-text">{{ project.description }}</p>
       {% endif %}
