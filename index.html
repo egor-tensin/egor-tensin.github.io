@@ -3,9 +3,9 @@ title: Main page
 layout: plain
 main:
   - url: /cv/cv.pdf
-    text: cv
+    name: cv
   - url: https://egort.name/
-    text: egort.name
+    name: egort.name
     description: My other place on the web
 projects:
   - url: /blog/
@@ -65,7 +65,7 @@ projects:
     {% if page.main %}
       {% for link in page.main %}
         <a class="list-group-item" href="{{ link.url }}">
-          <h4 class="list-group-item-heading">{{ link.text }}</h4>
+          <h4 class="list-group-item-heading">{{ link.name }}</h4>
         {% if link.description %}
           <p class="list-group-item-text">{{ link.description }}</p>
         {% endif %}
