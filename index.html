@@ -2,6 +2,8 @@
 title: Main page
 layout: plain
 main:
+  - email
+  - github
   - url: /cv/cv.pdf
     name: cv
   - url: https://egort.name/
@@ -56,18 +58,24 @@ projects:
     <div class="list-group-item disabled">
       <h4 class="list-group-item-heading">links</h4>
     </div>
-    <a class="list-group-item" href="mailto:{{ site.settings.author.email }}">
-      <h4 class="list-group-item-heading">{{ site.settings.author.email | downcase }}</h4>
-    </a>
-    <a class="list-group-item" href="{{ site.github.owner_url }}">
-      <h4 class="list-group-item-heading">github</h4>
-    </a>
     {% if page.main %}
       {% for link in page.main %}
-        <a class="list-group-item" href="{{ link.url }}">
-          <h4 class="list-group-item-heading">{{ link.name }}</h4>
-        {% if link.description %}
-          <p class="list-group-item-text">{{ link.description }}</p>
+        {% if link == 'email' %}
+          {% assign url = 'mailto:' | append: site.settings.author.email %}
+          {% assign name = site.settings.author.email | downcase %}
+        {% elsif link == 'github' %}
+          {% assign url = site.github.owner_url %}
+          {% assign name = 'github' %}
+        {% else %}
+          {% assign url = link.url %}
+          {% assign name = link.name %}
+        {% endif %}
+        {% assign desc = link.description %}
+
+        <a class="list-group-item" href="{{ url }}">
+          <h4 class="list-group-item-heading">{{ name }}</h4>
+        {% if desc %}
+          <p class="list-group-item-text">{{ desc }}</p>
         {% endif %}
         </a>
       {% endfor %}
