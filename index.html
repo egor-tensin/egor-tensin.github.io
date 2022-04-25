@@ -55,7 +55,9 @@ projects:
         {% assign desc = link.description %}
 
         <a class="list-group-item" href="{{ url }}">
+        {% if name %}
           <h4 class="list-group-item-heading">{{ name }}</h4>
+        {% endif %}
         {% if desc %}
           <p class="list-group-item-text">{{ desc }}</p>
         {% endif %}
@@ -73,13 +75,16 @@ projects:
     <div class="list-group-item disabled">
       <h4 class="list-group-item-heading">projects</h4>
     </div>
-    {% for project in page.projects %}
-      <a class="list-group-item" href="{{ project.url }}">
-      {% if project.name %}
-        <h4 class="list-group-item-heading">{{ project.name }}</h4>
+    {% for link in page.projects %}
+      {% assign url = link.url %}
+      {% assign name = link.name %}
+      {% assign desc = link.description %}
+      <a class="list-group-item" href="{{ url }}">
+      {% if name %}
+        <h4 class="list-group-item-heading">{{ name }}</h4>
       {% endif %}
-      {% if project.description %}
-        <p class="list-group-item-text">{{ project.description }}</p>
+      {% if desc %}
+        <p class="list-group-item-text">{{ desc }}</p>
       {% endif %}
       </a>
     {% endfor %}
