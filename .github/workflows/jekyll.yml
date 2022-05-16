@@ -29,3 +29,10 @@ jobs:
         run: |
           nohup make serve &
           sleep 3 && make wget
+      - name: Set up ssh-agent
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: '${{ secrets.REMOTE_SSH_KEY }}'
+      - name: Deploy
+        run: |
+          rsync -avh -e 'ssh -o StrictHostKeyChecking=no' _site/ '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_DIR }}/' --delete
