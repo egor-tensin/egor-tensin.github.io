@@ -3,9 +3,7 @@ Egor Tensin
 
 [![Jekyll](https://github.com/egor-tensin/egor-tensin.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/egor-tensin/egor-tensin.github.io/actions/workflows/jekyll.yml)
 
-This is my website hosted on [GitHub Pages] at https://egor-tensin.github.io/.
-
-[GitHub Pages]: https://pages.github.com
+This is my website hosted at https://egort.name/.
 
 Development
 -----------
