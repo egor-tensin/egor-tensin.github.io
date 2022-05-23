@@ -42,10 +42,11 @@ serve:
 	$(jekyll) serve
 
 URL := http://localhost:4000/
+SKIP := /blog,/cv,/jekyll-theme,/sorting-algorithms,/void,/wireguard-config
 
 .PHONY: wget
 wget:
-	wget --no-verbose --recursive --no-parent --convert-links --adjust-extension -e robots=off --directory-prefix=.wget -X /blog,/cv,/jekyll-theme,/sorting-algorithms,/void,/wireguard-config -- '$(call escape,$(URL))'
+	wget --no-verbose --recursive --no-parent --convert-links --adjust-extension -e robots=off --directory-prefix=.wget -X '$(call escape,$(SKIP))' -- '$(call escape,$(URL))'
 
 .PHONY: view
 view:
