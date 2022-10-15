@@ -6,11 +6,8 @@ show_drafts: true
 strict_front_matter: true
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - Makefile
   - README.md
-  - vendor/
 
 # Plugins
 plugins:
@@ -21,7 +18,7 @@ plugins:
 # jekyll-github-metadata
 repository: egor-tensin/egor-tensin.github.io
 # jekyll-remote-theme
-remote_theme: egor-tensin/jekyll-theme@2dc87131123afaa1716c87dd02164b33059ad2b8
+remote_theme: egor-tensin/jekyll-theme@425d20d2001d87eff0e6aa3c605bf30ff2063f60
 
 # Theme settings
 settings:
