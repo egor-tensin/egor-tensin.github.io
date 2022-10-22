@@ -42,7 +42,7 @@ serve:
 	$(jekyll) serve
 
 URL := http://localhost:4000/
-SKIP := /blog,/cv,/jekyll-theme,/sorting-algorithms,/void,/wireguard-config
+SKIP := /blog,/cv,/jekyll-theme,/sorting-algorithms,/status,/void,/wireguard-config
 
 .PHONY: wget
 wget:
