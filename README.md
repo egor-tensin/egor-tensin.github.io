@@ -5,15 +5,18 @@ Egor Tensin
 
 This is my website hosted at https://egort.name/.
 
-Built using [Jekyll]; uses [jekyll-theme] as the Jekyll theme.
+Development
+-----------
+
+This is a static website, built using [Jekyll].
+[jekyll-theme] is used as the Jekyll theme.
 
 [Jekyll]: https://jekyllrb.com/
 [jekyll-theme]: https://github.com/egor-tensin/jekyll-theme
 
-Development
------------
+See [DEVELOPMENT.md] for details.
 
-See [DEVELOPMENT.md](DEVELOPMENT.md).
+[DEVELOPMENT.md]: DEVELOPMENT.md
 
 License
 -------
