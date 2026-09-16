@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# Copyright (c) 2026 Egor Tensin <egor@tensin.name>
+# This file is part of the "Egor Tensin" project.
+# For details, see https://github.com/egor-tensin/egor-tensin.github.io.
+# Distributed under the MIT License.
+
 set -o errexit -o nounset -o pipefail
 shopt -s inherit_errexit lastpipe
 
